@@ -5,6 +5,7 @@ import torch
 import torch.nn as nn
 from transformers import BertModel
 
+from src_final.utils.loss_utils import FocalLoss
 
 import ipdb
 
@@ -68,7 +69,9 @@ class bertForSequenceClassification(BaseModel):
         self.dropout = nn.Dropout(0.1)
 
 
-        self.loss_fct = nn.CrossEntropyLoss()
+        # self.loss_fct = nn.CrossEntropyLoss()
+        self.loss_fct = FocalLoss()
+
 
         init_blocks = [self.classifier_oce, self.classifier_ocnli, self.classifier_tnews]
 
@@ -140,6 +143,109 @@ class bertForSequenceClassification(BaseModel):
                 if labels is not None:
                     loss_l = []
                     for idx,label in enumerate(labels):
+                        loss_l.append(self.loss_fct(logits[idx].view(-1, num_labels[idx]), label.view(-1)))
+                    loss = torch.mean(torch.stack(loss_l))
+                    outputs = (loss,) + outputs
+
+                return outputs
+
+
+
+
+
+class GateOut(bertForSequenceClassification):
+    def __init__(self,
+                 bert_dir,
+                 dropout_prob=0.1,
+                 ):
+        super(GateOut, self).__init__(bert_dir=bert_dir,
+                                               dropout_prob=dropout_prob)
+        self.gate1 = nn.Linear(self.bert_config.hidden_size,self.bert_config.hidden_size)
+        self.gate2 = nn.Linear(self.bert_config.hidden_size,self.bert_config.hidden_size)
+        self.gate3 = nn.Linear(self.bert_config.hidden_size,self.bert_config.hidden_size)
+
+        init_gates = [self.gate1, self.gate2, self.gate3]
+
+        self._init_weights(init_gates, initializer_range=self.bert_config.initializer_range)
+
+    def forward(self,
+                token_ids,
+                attention_masks,
+                token_type_ids,
+                task=None,
+                labels=None):
+        tasks = []
+
+        # ipdb.set_trace()
+        bert_outputs = self.bert_module(
+            input_ids=token_ids,
+            attention_mask=attention_masks,
+            token_type_ids=token_type_ids
+        )
+        if task:
+            if not isinstance(task, list):
+                assert task in ['oce', 'tnews', 'ocnli']
+
+                # seq_out = bert_outputs[0]
+                pooled_out = bert_outputs[1]
+                pooled_out = self.dropout(pooled_out)
+                num_labels = 0
+                logits = None
+                if task == 'oce':
+                    gate = torch.sigmoid(self.gate1(pooled_out))
+                    pooled_out = pooled_out * gate
+                    logits = self.classifier_oce(pooled_out)
+                    num_labels = 7
+                elif task == 'ocnli':
+                    gate = torch.sigmoid(self.gate2(pooled_out))
+                    pooled_out = pooled_out * gate
+                    logits = self.classifier_ocnli(pooled_out)
+                    num_labels = 3
+                elif task == 'tnews':
+                    gate = torch.sigmoid(self.gate3(pooled_out))
+                    pooled_out = pooled_out * gate
+                    logits = self.classifier_tnews(pooled_out)
+                    num_labels = 15
+                outputs = (logits,)
+                if labels is not None:
+                    loss = self.loss_fct(logits.view(-1, num_labels), labels.view(-1))
+                    outputs = (loss,) + outputs
+
+                return outputs
+
+
+            else:
+                tasks = task
+                # seq_out = bert_outputs[0]
+                pooled_out = bert_outputs[1]
+                pooled_out = self.dropout(pooled_out)
+                num_labels = []
+                logits = []
+                for idx, task in enumerate(tasks):
+                    row = pooled_out[idx]
+                    logit, num_label = None, None
+                    if task == 'oce':
+                        gate = torch.sigmoid(self.gate1(row))
+                        row = row * gate
+                        logit = self.classifier_oce(row)
+                        num_label = 7
+                    elif task == 'ocnli':
+                        gate = torch.sigmoid(self.gate2(row))
+                        row = row * gate
+                        logit = self.classifier_ocnli(row)
+                        num_label = 3
+                    elif task == 'tnews':
+                        gate = torch.sigmoid(self.gate3(row))
+                        row = row * gate
+                        logit = self.classifier_tnews(row)
+                        num_label = 15
+                    logits.append(logit)
+                    num_labels.append(num_label)
+                outputs = (logits,)
+
+                if labels is not None:
+                    loss_l = []
+                    for idx, label in enumerate(labels):
                         loss_l.append(self.loss_fct(logits[idx].view(-1, num_labels[idx]), label.view(-1)))
                     loss = torch.mean(torch.stack(loss_l))
                     outputs = (loss,) + outputs
