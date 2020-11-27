@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9978041-b500-408c-987c-fb80d21efa93" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src_final/utils/model_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_final/utils/model_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src_final/preprocess/processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/src_final/preprocess/processor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/train_combine.py" beforeDir="false" afterPath="$PROJECT_DIR$/train_combine.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,20 +20,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="train.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/train.sh">
+      <file leaf-file-name="processor.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src_final/preprocess/processor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+            <state relative-caret-position="233">
+              <caret line="168" column="34" selection-start-line="168" selection-start-column="34" selection-end-line="168" selection-end-column="34" />
+              <folding>
+                <element signature="e#84#95#0" expanded="true" />
+                <element signature="e#401#584#0" />
+                <element signature="e#508#584#0" />
+                <element signature="e#622#886#0" />
+                <element signature="e#729#886#0" />
+                <element signature="e#926#1196#0" />
+                <element signature="e#1033#1196#0" />
+                <element signature="e#1370#1609#0" />
+                <element signature="e#1635#1935#0" />
+                <element signature="e#1788#1935#0" />
+                <element signature="e#1973#2381#0" />
+                <element signature="e#2126#2381#0" />
+                <element signature="e#2421#2837#0" />
+                <element signature="e#2574#2837#0" />
+                <element signature="e#2877#3293#0" />
+                <element signature="e#3030#3293#0" />
+                <element signature="e#3322#3640#0" />
+                <element signature="e#3374#3478#0" />
+                <element signature="e#3535#3640#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="train_combine.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="train_combine.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/train_combine.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="26">
-              <caret line="2" selection-start-line="2" selection-end-line="17" />
+            <state relative-caret-position="546">
+              <caret line="49" column="73" selection-start-line="49" selection-start-column="73" selection-end-line="49" selection-end-column="73" />
               <folding>
                 <element signature="e#16#25#0" expanded="true" />
               </folding>
@@ -40,74 +62,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OCEMOTION_train.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/OCEMOTION_train.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-412011" />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OCEMOTION_train_s.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/OCEMOTION_train_s.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="10026" selection-start-line="10026" selection-end-line="10026" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OCNLI_train_s.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/OCNLI_train_s.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-589656" />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TNEWS_train_s.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/TNEWS_train_s.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="48002" column="35" selection-start-line="48002" selection-start-column="35" selection-end-line="48002" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="options.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src_final/utils/options.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="13">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="model_utils.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src_final/utils/model_utils.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="53">
-              <caret line="155" column="13" selection-start-line="155" selection-start-column="6" selection-end-line="155" selection-end-column="13" />
-              <folding>
-                <element signature="e#16#25#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="test.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+              <folding>
+                <element signature="e#16#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ocnli_predict.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/submit_sample/ocnli_predict.json">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="loss_utils.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src_final/utils/loss_utils.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-              <folding>
-                <element signature="e#0#12#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+      <file leaf-file-name="tnews_predict.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/submit_sample/tnews_predict.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="ocemotion_predict.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/submit_sample/ocemotion_predict.json">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -123,6 +102,8 @@
     <findStrings>
       <find>swa_raw_model</find>
       <find>assert</find>
+      <find>opt.ou</find>
+      <find>get_test_examples</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -134,7 +115,6 @@
         <option value="$PROJECT_DIR$/src_final/utils/evaluator.py" />
         <option value="$PROJECT_DIR$/src_final/__init__.py" />
         <option value="$PROJECT_DIR$/data/random_split.py" />
-        <option value="$PROJECT_DIR$/src_final/preprocess/processor.py" />
         <option value="$PROJECT_DIR$/src_final/utils/dataset_utils.py" />
         <option value="$PROJECT_DIR$/train.py" />
         <option value="$PROJECT_DIR$/train.sh" />
@@ -146,7 +126,10 @@
         <option value="$PROJECT_DIR$/src_final/utils/options.py" />
         <option value="$PROJECT_DIR$/src_final/utils/loss_utils.py" />
         <option value="$PROJECT_DIR$/src_final/utils/model_utils.py" />
+        <option value="$PROJECT_DIR$/test.sh" />
         <option value="$PROJECT_DIR$/train_combine.py" />
+        <option value="$PROJECT_DIR$/src_final/preprocess/processor.py" />
+        <option value="$PROJECT_DIR$/test.py" />
       </list>
     </option>
   </component>
@@ -182,11 +165,6 @@
             <path>
               <item name="transformer_pipeline" type="b2602c69:ProjectViewProjectNode" />
               <item name="transformer_pipeline" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="transformer_pipeline" type="b2602c69:ProjectViewProjectNode" />
-              <item name="transformer_pipeline" type="462c0819:PsiDirectoryNode" />
               <item name="out" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -194,6 +172,12 @@
               <item name="transformer_pipeline" type="462c0819:PsiDirectoryNode" />
               <item name="out" type="462c0819:PsiDirectoryNode" />
               <item name="roberta_wwm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="transformer_pipeline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="transformer_pipeline" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="roberta_wwm_large" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="transformer_pipeline" type="b2602c69:ProjectViewProjectNode" />
@@ -211,6 +195,11 @@
               <item name="transformer_pipeline" type="462c0819:PsiDirectoryNode" />
               <item name="src_final" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="transformer_pipeline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="transformer_pipeline" type="462c0819:PsiDirectoryNode" />
+              <item name="submit_sample" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -339,7 +328,7 @@
       <window_info anchor="bottom" id="Terminal" order="11" />
       <window_info anchor="right" id="JSON Viewer" order="6" />
       <window_info anchor="right" id="Remote Host" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.8977556" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16566063" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="SciView" order="5" />
@@ -381,7 +370,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src_final/preprocess/processor.py</url>
-          <line>432</line>
+          <line>448</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -477,7 +466,6 @@ d = cnt(train_dataset.tasks)</expression-string>
             <element signature="e#729#886#0" />
             <element signature="e#926#1196#0" />
             <element signature="e#1033#1196#0" />
-            <element signature="e#1236#1609#0" />
             <element signature="e#1370#1609#0" />
             <element signature="e#1635#1935#0" />
             <element signature="e#1788#1935#0" />
@@ -568,22 +556,6 @@ d = cnt(train_dataset.tasks)</expression-string>
         <state relative-caret-position="-40716" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/OCEMOTION_a.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/OCNLI_a.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/OCNLI_dev.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65351">
-          <caret line="5027" column="17" selection-start-line="5027" selection-start-column="17" selection-end-line="5027" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/TNEWS_a.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/TNEWS_dev.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69121">
@@ -618,49 +590,10 @@ d = cnt(train_dataset.tasks)</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src_final/preprocess/processor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4303">
-          <caret line="409" column="46" selection-start-line="409" selection-start-column="46" selection-end-line="409" selection-end-column="46" />
-          <folding>
-            <element signature="e#84#95#0" expanded="true" />
-            <element signature="e#401#584#0" />
-            <element signature="e#508#584#0" />
-            <element signature="e#622#886#0" />
-            <element signature="e#729#886#0" />
-            <element signature="e#926#1196#0" />
-            <element signature="e#1033#1196#0" />
-            <element signature="e#1236#1609#0" />
-            <element signature="e#1370#1609#0" />
-            <element signature="e#1635#1935#0" />
-            <element signature="e#1788#1935#0" />
-            <element signature="e#1973#2381#0" />
-            <element signature="e#2126#2381#0" />
-            <element signature="e#2421#2837#0" />
-            <element signature="e#2574#2837#0" />
-            <element signature="e#2877#3293#0" />
-            <element signature="e#3030#3293#0" />
-            <element signature="e#3322#3640#0" />
-            <element signature="e#3374#3478#0" />
-            <element signature="e#3535#3640#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src_final/utils/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="13">
           <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src_final/utils/dataset_utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1079">
-          <caret line="83" column="22" selection-start-line="83" selection-start-column="22" selection-end-line="83" selection-end-column="22" />
-          <folding>
-            <element signature="e#84#96#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -675,16 +608,6 @@ d = cnt(train_dataset.tasks)</expression-string>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="13">
           <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src_final/utils/trainer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="e#99#108#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -716,30 +639,33 @@ d = cnt(train_dataset.tasks)</expression-string>
         <state relative-caret-position="-412011" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/OCEMOTION_train_s.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="10026" selection-start-line="10026" selection-end-line="10026" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/OCNLI_train_s.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-589656" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/TNEWS_train_s.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="48002" column="35" selection-start-line="48002" selection-start-column="35" selection-end-line="48002" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src_final/utils/options.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="13">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src_final/utils/model_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53">
+          <caret line="155" column="13" selection-start-line="155" selection-start-column="6" selection-end-line="155" selection-end-column="13" />
+          <folding>
+            <element signature="e#16#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/OCNLI_dev.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="5027" column="17" selection-start-line="5027" selection-start-column="17" selection-end-line="5027" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/OCNLI_a.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-19020" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src_final/utils/loss_utils.py">
@@ -752,23 +678,133 @@ d = cnt(train_dataset.tasks)</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
+    <entry file="file://$PROJECT_DIR$/data/OCNLI_train_s.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-589657" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/OCEMOTION_train_s.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-240439">
+          <caret line="10026" selection-start-line="10026" selection-end-line="10026" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/TNEWS_train_s.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="729">
+          <caret line="48002" column="35" selection-start-line="48002" selection-start-column="35" selection-end-line="48002" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src_final/utils/dataset_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="607">
+          <caret line="81" column="8" selection-start-line="81" selection-start-column="8" selection-end-line="81" selection-end-column="8" />
+          <folding>
+            <element signature="e#84#96#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src_final/utils/trainer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/submits/tnews_predict.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="27" selection-start-column="27" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/submit_sample/ocnli_predict.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src_final/utils/model_utils.py">
+    <entry file="file://$PROJECT_DIR$/submit_sample/tnews_predict.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/submit_sample/ocemotion_predict.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/submits/ocemotion_predict.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
-          <caret line="155" column="13" selection-start-line="155" selection-start-column="6" selection-end-line="155" selection-end-column="13" />
+        <state relative-caret-position="-663">
+          <caret column="28" lean-forward="true" selection-start-column="28" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/submits/ocnli_predict.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-19044" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/OCEMOTION_a.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="1482" column="30" lean-forward="true" selection-start-line="1482" selection-start-column="30" selection-end-line="1482" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_combine.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="49" column="73" selection-start-line="49" selection-start-column="73" selection-end-line="49" selection-end-column="73" />
           <folding>
             <element signature="e#16#25#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/train_combine.py">
+    <entry file="file://$PROJECT_DIR$/src_final/preprocess/processor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="2" selection-start-line="2" selection-end-line="17" />
+        <state relative-caret-position="233">
+          <caret line="168" column="34" selection-start-line="168" selection-start-column="34" selection-end-line="168" selection-end-column="34" />
+          <folding>
+            <element signature="e#84#95#0" expanded="true" />
+            <element signature="e#401#584#0" />
+            <element signature="e#508#584#0" />
+            <element signature="e#622#886#0" />
+            <element signature="e#729#886#0" />
+            <element signature="e#926#1196#0" />
+            <element signature="e#1033#1196#0" />
+            <element signature="e#1370#1609#0" />
+            <element signature="e#1635#1935#0" />
+            <element signature="e#1788#1935#0" />
+            <element signature="e#1973#2381#0" />
+            <element signature="e#2126#2381#0" />
+            <element signature="e#2421#2837#0" />
+            <element signature="e#2574#2837#0" />
+            <element signature="e#2877#3293#0" />
+            <element signature="e#3030#3293#0" />
+            <element signature="e#3322#3640#0" />
+            <element signature="e#3374#3478#0" />
+            <element signature="e#3535#3640#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/TNEWS_a.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6020">
+          <caret line="1000" column="8" selection-start-line="1000" selection-start-column="8" selection-end-line="1000" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
           <folding>
             <element signature="e#16#25#0" expanded="true" />
           </folding>

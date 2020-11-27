@@ -125,13 +125,17 @@ class BaseProcessor:
 class OceProcessor(BaseProcessor):
 
     @staticmethod
-    def _example_generator(raw_examples, set_type, label_dict):
+    def _example_generator(raw_examples, set_type, label_dict=None):
         examples = []
         for line in raw_examples:
             line = line.replace('\n','')
             text = line.split('\t')[1]
-            label = line.split('\t')[2]
-            label_id = label_dict[label]
+
+            label_id = None
+            if set_type != 'test':
+                label = line.split('\t')[2]
+                label_id = label_dict[label]
+
             examples.append(OceExample(set_type=set_type,
                                        text=text,
                                        label=label_id))
@@ -149,18 +153,22 @@ class OceProcessor(BaseProcessor):
     def get_dev_examples(self, raw_examples):
         return self._example_generator(raw_examples, 'dev', self.get_labels_dict())
 
+    def get_test_examples(self, raw_examples):
+        return self._example_generator(raw_examples, 'test')
 
 class TnewsProcessor(BaseProcessor):
 
     @staticmethod
-    def _example_generator(raw_examples, set_type, label_dict):
+    def _example_generator(raw_examples, set_type, label_dict=None):
         examples = []
         for line in raw_examples:
             line = line.replace('\n','')
 
             text = line.split('\t')[1]
-            label = line.split('\t')[2]
-            label_id = label_dict[label]
+            label_id = None
+            if set_type != 'test':
+                label = line.split('\t')[2]
+                label_id = label_dict[label]
             examples.append(TnewsExample(set_type=set_type,
                                        text=text,
                                        label=label_id))
@@ -177,6 +185,9 @@ class TnewsProcessor(BaseProcessor):
 
     def get_dev_examples(self, raw_examples):
         return self._example_generator(raw_examples, 'dev', self.get_labels_dict())
+
+    def get_test_examples(self, raw_examples):
+        return self._example_generator(raw_examples, 'test')
 
 
 class OcnliProcessor(BaseProcessor):
@@ -197,8 +208,10 @@ class OcnliProcessor(BaseProcessor):
 
             text_a = line.split('\t')[1]
             text_b = line.split('\t')[2]
-            label = line.split('\t')[3]
-            label_id = int(label)
+            label_id = None
+            if set_type != 'test':
+                label = line.split('\t')[3]
+                label_id = int(label)
             examples.append(OcnliExample(set_type=set_type,
                                          text_a=text_a,
                                          text_b=text_b,
@@ -210,6 +223,9 @@ class OcnliProcessor(BaseProcessor):
 
     def get_dev_examples(self, raw_examples):
         return self._example_generator(raw_examples, 'dev')
+
+    def get_test_examples(self, raw_examples):
+        return self._example_generator(raw_examples, 'test')
 
 
 

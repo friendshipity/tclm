@@ -29,8 +29,8 @@ def get_base_out(task, model, loader, device):
         for idx, _batch in enumerate(loader):
             for key in _batch.keys():
                 _batch[key] = _batch[key].to(device)
-                tmp_out = model(task=task,**_batch)
-                yield tmp_out[1],_batch['labels']
+            tmp_out = model(task=task,**_batch)
+            yield tmp_out[1],_batch['labels']
 
 # def eval(opt):
 #     model_path = opt.model_path
